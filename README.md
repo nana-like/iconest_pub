@@ -36,11 +36,11 @@ _Last Modified: 2018-08-29_
 
 - 파일 공유는 기본적으로 깃헙(Github)을 사용합니다.
 - 원격 저장소 주소는 다음과 같습니다.
-  - _(작성중)_
+  - [Github](https://github.com/AnnYKim/iconest_pub)
 - 현재 총 3 개의 브랜치가 있습니다.
   1. master
-  2. hs
-  3. ny
+  2. style-hs
+  3. style-ny
 - 작업 전 master 브랜치를 pull 해주세요.
 - 기본적인 작업은 자신의 브랜치에서 진행하고, 작업이 완료되면 master 브랜치에 merge 해주세요.
 
@@ -74,18 +74,24 @@ _Last Modified: 2018-08-29_
 - 예를 들면, hs.scss 는 우선 scss-helpers 폴더의 scss 를 import 합니다.
 - 그런 다음, 자신이 작업한 table.scss 등을 import 합니다.
 
-  > ex) @import "../../scss-helpers/mixins";
+  ex)
+  ``
 
-        @import "modules/table.scss";
-        @import "layout/transaction.scss";
-        ...
+  @import "../../scss-helpers/mixins";
+  @import "modules/table.scss";
+  @import "layout/transaction.scss";
+  ...
+
+  ``
 
 - html 파일에서는 공통 CSS(base.css)와 개별 CSS(hs.css, ny.css)를 모두 연결합니다.
 
-  > ex) <link rel="stylesheet" href="css/base.css" />
+  ex)
+  ``
 
-        <link rel="stylesheet" href="css/hs.css" />
-        <link rel="stylesheet" href="css/ny.css" />
+  <link rel="stylesheet" href="css/base.css" /> <link rel="stylesheet" href="css/hs.css" /> <link rel="stylesheet" href="css/ny.css" />
+
+  ``
 
 - **공통으로 사용할 요소는 components.html** 파일에도 작성합니다. 따라서 마크업 중, 다른 사람이 작업한 요소(버튼 등)가 필요하면, components 페이지에서 확인해 복사하여 사용합니다.
 
