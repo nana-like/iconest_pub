@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+// 테스트용입니다.
+// 어떤 식으로 동작하는지 확인하시면 지워주세요.
+
+.test {
+  padding: 30px;
+  box-sizing: border-box;
+
+  ul {
+    background: #eaeaea;
+    padding: 20px 20px 20px 40px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: crimson;
+  }
+
+  li {
+    margin: 4px 0;
+    color: #242424;
+
+    strong {
+      font-size: 17px;
+      color: $hello;
+    }
+  }
+
+  div {
+    color: #666;
+  }
+
+  ul > li {
+    margin: 10px 0;
+    list-style: disc;
+  }
+
+  ol li {
+    list-style: decimal;
+  }
+}

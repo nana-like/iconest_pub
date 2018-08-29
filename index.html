@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- HTML에 3개의 CSS를 모두 연결합니다! -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/ny.css" />
+  <link rel="stylesheet" href="css/hs.css" />
+
+  <title>example</title>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="test">
+
+      <h1>Test Page</h1>
+      <article>
+        <ul>
+          <li>css/ 폴더 내 scss/, scss-helpers/ 폴더가 있습니다.</li>
+          <li>scss-helpers/ 폴더는 믹스인이나 변수 등을 담고 있습니다. 필요시 추가하시면 됩니다.</li>
+          <li>scss/ 폴더 내에는 base/, hs/, ny/ 폴더가 있습니다.
+            <ol>
+              <li>base: 리셋, 폰트를 정의하고 있습니다. 수정 시 충돌이 일어날 가능성이 높아서, base 를 덮어씌우려면 개별 폴더 내에서 따로 정의해야할 것 같습니다.</li>
+              <li><strong>hs: 혜성님은 여기서 작업해주세요 :) 컴파일한 hs.css 가 css/ 폴더 내에 들어가도록 해주세요.</strong></li>
+              <li>ny: 저는 여기서 작업합니다~</li>
+            </ol>
+            <li>scss 파일들은 **각각 컴파일**하여, base.css, hs.css 와 ny.css 를 만듭니다. 이 css 는 html 페이지를 띄었을 때 view 확인 용이며, **프론트단에는
+            scss 만 전달할 예정**입니다.</li>
+            <li>컴파일러는 원하시는 걸로 사용해주세요!</li>
+            <li>공통으로 사용할 폴더 
+              <ol><li>scss-helpers/</li>
+                <li>scss/base/</li>
+              </ol>
+            </li>
+            <li>개별로 사용할 폴더
+              <ol><li>scss/hs/</li>
+                  <li>scss/ny/ </li>
+              </ol>
+            </li>
+            <li>스타일 작업은 개별 폴더에서 진행해 주세요. 컴파일하실 때, 자신이 작업한 파일들을 scss 에 import 하면 됩니다. 개별 폴더 내 하위폴더를 더 만드셔도 상관 없습니다(예.
+            modules/, layout/ 등). </li>
+            <li>예를 들면, hs.scss 는 우선 scss-helpers 폴더의 scss 를 import 합니다.</li>
+              <li>그런 다음, 자신이 작업한 table.scss 등을
+            import 합니다.
+          </li>
+              <div>ex)<br>
+                @import "../../scss-helpers/mixins";<br>
+                @import "modules/table.scss"; <br>
+                @import "layout/transaction.scss";<br>
+                ...
+              </div>
+            <li>html 파일에서는 공통 CSS(base.css)와 개별 CSS(hs.css, ny.css)를 모두 연결합니다.</li>
+            <div>ex)<br>
+            &lt;link rel="stylesheet" href="css/base.css" /><br>
+            &lt;link rel="stylesheet" href="css/hs.css" /><br>
+            &lt;link rel="stylesheet" href="css/ny.css" /><br>
+            </div>
+            <li>**공통으로 사용할 요소는 components.html** 파일에도 작성합니다. 따라서 마크업 중, 다른 사람이
+            작업한 요소(버튼 등)가 필요하면, components 페이지에서 확인해 복사하여 사용합니다.
+            </li>
+          </li>
+        </ul>
+      </article>
+
+    </div>
+
+  </div>
+</body>
+
+</html>

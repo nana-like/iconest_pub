@@ -1,0 +1,26 @@
+.test {
+  padding: 30px;
+  box-sizing: border-box; }
+  .test ul {
+    background: #eaeaea;
+    padding: 20px 20px 20px 40px;
+    box-sizing: border-box;
+    font-size: 14px; }
+  .test h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: crimson; }
+  .test li {
+    margin: 4px 0;
+    color: #242424; }
+    .test li strong {
+      font-size: 17px;
+      color: #2218ac; }
+  .test div {
+    color: #666; }
+  .test ul > li {
+    margin: 10px 0;
+    list-style: disc; }
+  .test ol li {
+    list-style: decimal; }

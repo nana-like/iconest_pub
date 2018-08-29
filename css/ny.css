@@ -1,0 +1,23 @@
+/**
+ * -----------------------------------------------
+ * Last Modified: 2018-08-29 16:45:56
+ * Author: nykim (nykim@nykim.net)
+ * Description: Iconest CSS
+ * -----------------------------------------------
+ */
+
+.page-components article { background-color: #efefef; padding: 20px; box-sizing: border-box; margin: 20px 0; }
+
+.page-components article strong { font-size: 20px; }
+
+.page-components article strong + p { font-size: 16px; margin-bottom: 20px; }
+
+.page-components .button-test { padding: 10px 26px; border-radius: 10px; font-size: 20px; color: #fff; text-decoration: none; background-color: #e74c3c; border-bottom: 5px solid #bd3e31; text-shadow: 0px -2px #bd3e31; }
+
+.page-components .button-test:hover { opacity: 0.5; }
+
+.page-components .table-test { table-layout: fixed; width: 100%; text-align: center; border-collapse: collapse; background-color: #fff; box-shadow: 3px 0px 7px rgba(200, 200, 200, 0.35); }
+
+.page-components .table-test th { padding: 2px; text-align: center; font-weight: 600; font-size: 15px; color: #fff; background-color: #142355; }
+
+.page-components .table-test td { padding: 10px; border: 1px solid #dfdfdf; word-break: break-all; }

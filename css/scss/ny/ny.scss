@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/////////////
+// ny.scss //
+/////////////
+
+//[1] 변수, 믹스인 도입
+@import "../../scss-helpers/variables";
+@import "../../scss-helpers/mixins";
+@import "../../scss-helpers/colors";
+
+//[2] 개별 CSS 작성
+@import "test/test.scss";
