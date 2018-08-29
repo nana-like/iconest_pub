@@ -10,19 +10,25 @@ _Last Modified: 2018-08-29_
 - html/
 - fonts/
 - css/
+  - scss-helpers/
+    - \_colors.scss
+    - \_mixins.scss
+    - \_variables.scss
   - scss/
     - base/
-      - common.scss
-      - reset.scss
-      - font.scss
-    - helpers/
-      - animations.scss
-      - mixins.scss
-      - variables.scss
-    - hs.scss
-    - ny.scss
+      - \_common.scss
+      - \_reset.scss
+      - \_font.scss
+      - base.scss
+    - hs/
+      - hs.scss
+    - ny/
+      - ny.scss
+  - base.css
   - hs.css
   - ny.css
+- index.html
+- README.md
 
 ---
 
@@ -108,12 +114,8 @@ _Last Modified: 2018-08-29_
   - normal
   - bold
 
-### 2.variables
+### 2.crowss browse
 
-- \_variables.scss 에서 정의하고 있는 변수는 다음과 같습니다.
-  - layout
-  - z-idnex
-  - path
-  - font-weight
+- 크롬 / 모던 브라우저 기준으로 작업합니다.
 
-### 3.common style
+---
