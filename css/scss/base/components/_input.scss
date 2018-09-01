@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+// Input
+.input-style01 {
+  // - 기본 인풋필드
+  @include inputBase-normal;
+}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+// popup
+
+.popup {
+  position: relative;
+  @include popupBase-normal;
+}
+
+.popup-close {
+  // - 팝업 닫기
+  // [나영]TODO: 아이콘이 재플린에서 안 떼져서 추후 수정 예정
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+}

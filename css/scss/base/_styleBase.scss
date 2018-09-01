@@ -2,6 +2,31 @@
 
 // style base
 
+// [0] 타입페이스
+// 필요시 extend로 사용하세요
+
+h1 {
+  font-size: 38px;
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #333;
+}
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: -0.7px;
+  color: #111;
+}
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+h4 {
+  font-size: 18px;
+  color: #333;
+}
+
 // [1] 버튼
 
 @mixin buttonBase-normal {
@@ -22,8 +47,32 @@
   border-bottom: 1px solid $color;
 }
 
-// [2] 아이콘
+// [2] 팝업
+@mixin popupBase-normal($width: 460px) {
+  width: $width;
+  padding: 50px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+// [3] 아이콘
 @mixin iconBase {
   display: inline-block;
   background-position: 50% 50%;
+}
+
+// [4] 인풋
+@mixin inputBase-normal {
+  padding: 0 21px;
+  min-height: 50px;
+  color: #333;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+
+  @include placeholder {
+    color: #b5b5b5;
+  }
 }
