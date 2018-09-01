@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+// Icon
+.icon-plus {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  @include bgi("icon-plus");
+  background-position: 50% 50%;
+  background-size: 12px 12px;
+  border: 1px dashed #cccccc;
+  border-radius: 4px;
+}

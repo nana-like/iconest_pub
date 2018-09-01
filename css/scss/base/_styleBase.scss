@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+// style base
+
+// [1] 버튼
+
+@mixin buttonBase-normal {
+  min-width: 260px;
+  min-height: 60px;
+  padding: 0 20px;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+@mixin buttonBase-text($color: #00a7bb) {
+  font-size: 15px;
+  letter-spacing: -0.4px;
+  color: $color;
+  border-bottom: 1px solid $color;
+}
+
+// [2] 아이콘
+@mixin iconBase {
+  display: inline-block;
+  background-position: 50% 50%;
+}

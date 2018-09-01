@@ -1,6 +1,6 @@
 /**
  * -----------------------------------------------
- * Last Modified: 2018-08-29 16:45:56
+ * Last Modified: 2018-09-01 12:23:22
  * Author: nykim (nykim@nykim.net)
  * Description: Iconest CSS
  * -----------------------------------------------
@@ -43,3 +43,19 @@ input { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-fam
 html { position: relative; width: 100%; min-width: 100%; min-height: 100%; height: 100%; line-height: 1.15; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -ms-overflow-style: scrollbar; -webkit-tap-highlight-color: transparent; font-size: 62.5%; }
 
 body { position: relative; min-height: 100%; height: 100%; overflow-y: scroll; font-family: "NotoSans", AppleGothic, sans-serif, Helvetica; font-weight: 500; text-align: left; font-weight: 400; line-height: 1.5; background-color: #fff; }
+
+.icon-plus { display: inline-block; width: 30px; height: 30px; background-image: url(../images/icon-plus.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: 12px 12px; border: 1px dashed #cccccc; border-radius: 4px; }
+
+.button-style01 { min-width: 260px; min-height: 60px; padding: 0 20px; font-size: 18px; text-align: center; letter-spacing: -0.5px; border: 1px solid transparent; border-radius: 4px; color: #fff; background-color: #001517; }
+
+.button-style02 { min-width: 260px; min-height: 60px; padding: 0 20px; font-size: 18px; text-align: center; letter-spacing: -0.5px; border: 1px solid transparent; border-radius: 4px; color: #001517; background-color: #fff; border-color: #001517; }
+
+.button-style01:disabled, .button-style02:disabled { color: #fff; border-color: #dcdfe0; background-color: #dcdfe0; cursor: default; -moz-pointer-events: none; -webkit-pointer-events: none; -o-pointer-events: none; -ms-pointer-events: none; pointer-events: none; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.button-style03 { font-size: 15px; letter-spacing: -0.4px; color: #00a7bb; border-bottom: 1px solid #00a7bb; }
+
+.button-style04 { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; align-items: center; }
+
+.button-style04 .button-text { font-size: 15px; letter-spacing: -0.4px; color: #333; border-bottom: 1px solid #333; position: relative; padding: 0 2px 3px 2px; font-size: 16px; }
+
+.button-style04 [class^="icon-"] { margin-right: 8px; }
